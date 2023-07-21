@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "jsxImportSource": "solid-js",
+    "jsx": "preserve",
+    "types": [
+      "vite/client",
+      "unplugin-icons/types/solid",
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ]
+    },
+  },
+  "include": [
+    "src",
+    ".eslintrc.cjs",
+    "vite.config.ts",
+    "unocss.config.ts"
+  ]
+}
