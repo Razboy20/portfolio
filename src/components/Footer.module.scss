@@ -1,0 +1,30 @@
+.popover {
+  animation: in 0.5s cubic-bezier(0.01,0.45,0,0.83), out 0.4s cubic-bezier(0.61,0.1,0.97,0.79) 0.5s forwards;
+  will-change: transform;
+  transform: translate(var(--translateX), var(--translateY));
+}
+
+@keyframes in {
+  from {
+    opacity: 0;
+    transform: translate(var(--translateX), calc(var(--translateY) + 14px)) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translate(var(--translateX), calc(var(--translateY) + 0px)) scale(1);
+  }
+}
+
+@keyframes out {
+  0% {
+    opacity: 1;
+    transform: translate(var(--translateX), calc(var(--translateY) + 0px));
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--translateX), calc(var(--translateY) - 14px));
+  }
+}

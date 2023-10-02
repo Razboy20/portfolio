@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -11,6 +11,9 @@ dependencies:
   '@motionone/solid':
     specifier: ^10.16.2
     version: 10.16.2(solid-js@1.7.6)
+  '@solid-primitives/clipboard':
+    specifier: ^1.5.7
+    version: 1.5.7(solid-js@1.7.6)
   '@solid-primitives/resize-observer':
     specifier: ^2.0.18
     version: 2.0.18(solid-js@1.7.6)
@@ -35,9 +38,6 @@ dependencies:
   solid-start-vercel:
     specifier: ^0.2.26
     version: 0.2.26(solid-start@0.2.26)(vite@4.3.9)
-  solid-styled:
-    specifier: ^0.9.0
-    version: 0.9.0(solid-js@1.7.6)
   solid-transition-group:
     specifier: ^0.2.2
     version: 0.2.2(solid-js@1.7.6)
@@ -118,6 +118,9 @@ devDependencies:
   solid-start-node:
     specifier: ^0.2.26
     version: 0.2.26(solid-start@0.2.26)(undici@5.22.1)(vite@4.3.9)
+  solid-styled:
+    specifier: ^0.9.0
+    version: 0.9.0(solid-js@1.7.6)
   tailwindcss:
     specifier: ^3.3.2
     version: 3.3.2
@@ -2164,6 +2167,15 @@ packages:
       solid-js: 1.7.6
     dev: true
 
+  /@solid-primitives/clipboard@1.5.7(solid-js@1.7.6):
+    resolution: {integrity: sha512-MGTykW9739tMm2wS3P/Pb9W7BIZvgBLnC+Vhlx3s0DGm9CcEeXJ8lHyUp736UE57HKtCsqzfcCkpmIprbidIbQ==}
+    peerDependencies:
+      solid-js: ^1.6.12
+    dependencies:
+      '@solid-primitives/utils': 6.2.1(solid-js@1.7.6)
+      solid-js: 1.7.6
+    dev: false
+
   /@solid-primitives/cursor@0.0.109(solid-js@1.7.6):
     resolution: {integrity: sha512-HcEWiF/R8FAlPYOylIh1tDqlYETdbJ7VWWyZdNtkMX7eT/DfAUqp+ycHeUr8tKJ0Ds967ZskGh+5bufg8Cm+zw==}
     peerDependencies:
@@ -2314,6 +2326,14 @@ packages:
     dependencies:
       solid-js: 1.7.6
 
+  /@solid-primitives/utils@6.2.1(solid-js@1.7.6):
+    resolution: {integrity: sha512-TsecNzxiO5bLfzqb4OOuzfUmdOROcssuGqgh5rXMMaasoFZ3GoveUgdY1wcf17frMJM7kCNGNuK34EjErneZkg==}
+    peerDependencies:
+      solid-js: ^1.6.12
+    dependencies:
+      solid-js: 1.7.6
+    dev: false
+
   /@solidjs/meta@0.28.5(solid-js@1.7.6):
     resolution: {integrity: sha512-52luJR6hVNMA1K8Od5OD0d8WVz/svqZG4is8lrDimiUGxdia3DzuLF+pK56dnEzbNt9cA42qVFL134U9LkC9Gg==}
     peerDependencies:
@@ -2364,6 +2384,7 @@ packages:
 
   /@types/css-tree@2.3.1:
     resolution: {integrity: sha512-3m636Jz4d9d+lHVMp6FNLsUWQrfOx1xpm1SBxPbQYSNNgXMe+XswcsDeo1ldyULiuzYyWKk1kmvkLTgNq+215Q==}
+    dev: true
 
   /@types/estree@1.0.1:
     resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}
@@ -3312,6 +3333,7 @@ packages:
     dependencies:
       mdn-data: 2.0.30
       source-map-js: 1.0.2
+    dev: true
 
   /cssesc@3.0.0:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
@@ -3440,6 +3462,7 @@ packages:
     resolution: {integrity: sha512-pGjwhsmsp4kL2RTz08wcOlGN83otlqHeD/Z5T8GXZB+/YcpQ/dgo+lbU8ZsGxV0HIvqqxo9l7mqYwyYMD9bKDg==}
     engines: {node: '>=0.10'}
     hasBin: true
+    dev: true
 
   /detect-libc@2.0.1:
     resolution: {integrity: sha512-463v3ZeIrcWtdgIg6vI6XUncguvr2TnGl4SzDXinkt9mSLpBJKXT3mW6xT3VQdDN11+WVs29pgvivTc4Lp8v+w==}
@@ -4654,6 +4677,7 @@ packages:
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
+    dev: true
     optional: true
 
   /lightningcss-darwin-x64@1.21.0:
@@ -4662,6 +4686,7 @@ packages:
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
+    dev: true
     optional: true
 
   /lightningcss-linux-arm-gnueabihf@1.21.0:
@@ -4670,6 +4695,7 @@ packages:
     cpu: [arm]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /lightningcss-linux-arm64-gnu@1.21.0:
@@ -4678,6 +4704,7 @@ packages:
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /lightningcss-linux-arm64-musl@1.21.0:
@@ -4686,6 +4713,7 @@ packages:
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /lightningcss-linux-x64-gnu@1.21.0:
@@ -4694,6 +4722,7 @@ packages:
     cpu: [x64]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /lightningcss-linux-x64-musl@1.21.0:
@@ -4702,6 +4731,7 @@ packages:
     cpu: [x64]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /lightningcss-win32-x64-msvc@1.21.0:
@@ -4710,6 +4740,7 @@ packages:
     cpu: [x64]
     os: [win32]
     requiresBuild: true
+    dev: true
     optional: true
 
   /lightningcss@1.21.0:
@@ -4726,6 +4757,7 @@ packages:
       lightningcss-linux-x64-gnu: 1.21.0
       lightningcss-linux-x64-musl: 1.21.0
       lightningcss-win32-x64-msvc: 1.21.0
+    dev: true
 
   /lilconfig@2.1.0:
     resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
@@ -4790,6 +4822,7 @@ packages:
 
   /mdn-data@2.0.30:
     resolution: {integrity: sha512-GaqWWShW4kv/G9IEucWScBx9G1/vsFZZJUO+tD26M8J8z3Kw5RDQjaoZe03YAClgeS/SWPOcb4nkFBTEi5DUEA==}
+    dev: true
 
   /merge-anything@5.1.7:
     resolution: {integrity: sha512-eRtbOb1N5iyH0tkQDAoQ4Ipsp/5qSR79Dzrz8hEPxRX10RWWR/iQXdoKmBSRCThY1Fh5EhISDtpSc93fpxUniQ==}
@@ -5683,6 +5716,7 @@ packages:
       solid-js: 1.7.6
     transitivePeerDependencies:
       - supports-color
+    dev: true
 
   /solid-transition-group@0.2.2(solid-js@1.7.6):
     resolution: {integrity: sha512-6nB90UM2PB6VsIo/UCkmZmlIJb9mnmP7QPGrePqQJWtpUiRs5PbhkB8fvdyv9g/RPHWYpdJhQgxL6n++WmTt5A==}
