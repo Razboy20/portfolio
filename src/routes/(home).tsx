@@ -1,5 +1,5 @@
-import { Motion } from "@motionone/solid";
 import { type VoidComponent } from "solid-js";
+import { Motion } from "solid-motionone";
 
 const Home: VoidComponent = () => {
   return (

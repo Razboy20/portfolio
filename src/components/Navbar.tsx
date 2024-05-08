@@ -1,8 +1,8 @@
-import type { MotionProxy } from "@motionone/solid";
-import { createMotion } from "@motionone/solid";
 import type { AnchorProps } from "@solidjs/router";
 import { A } from "@solidjs/router";
 import { createSignal, onMount, splitProps } from "solid-js";
+import type { MotionProxy } from "solid-motionone";
+import { createMotion } from "solid-motionone";
 
 const MotionA = (props: Omit<Parameters<MotionProxy>[0] & AnchorProps, "tag">) => {
   let ref!: HTMLDivElement;

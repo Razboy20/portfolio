@@ -1,7 +1,9 @@
+import { mount, StartClient } from "@solidjs/start/client";
 import { inject } from "@vercel/analytics";
-import { mount, StartClient } from "solid-start/entry-client";
 
 inject();
-// import "solid-devtools";
+if (import.meta.env.DEV) {
+  await import("solid-devtools");
+}
 
-mount(() => <StartClient />, document);
+mount(() => <StartClient />, document.getElementById("app")!);

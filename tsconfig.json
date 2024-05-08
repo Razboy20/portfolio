@@ -11,6 +11,7 @@
     "jsxImportSource": "solid-js",
     "jsx": "preserve",
     "types": [
+      "vinxi/client",
       "vite/client",
       "unplugin-icons/types/solid",
     ],
@@ -24,7 +25,7 @@
   "include": [
     "src",
     ".eslintrc.cjs",
-    "vite.config.ts",
+    "app.config.ts",
     "unocss.config.ts"
   ]
 }

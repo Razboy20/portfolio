@@ -1,10 +1,10 @@
-import type { AnimationOptionsWithOverrides } from "@motionone/solid";
-import { Motion } from "@motionone/solid";
 import { writeClipboard } from "@solid-primitives/clipboard";
 import type { ComponentProps, JSX } from "solid-js";
 import { For, createSignal, splitProps } from "solid-js";
+import { Motion } from "solid-motionone";
 import styles from "./Footer.module.scss";
 
+import type { AnimationOptionsWithOverrides } from "motion";
 import { Portal } from "solid-js/web";
 
 interface SwitchLinkProps extends ComponentProps<"div"> {

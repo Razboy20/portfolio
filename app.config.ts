@@ -1,21 +1,23 @@
-// import devtools from "solid-devtools/vite";
-import vercel from "solid-start-vercel";
-import solid from "solid-start/vite";
+import { defineConfig } from "@solidjs/start/config";
+import devtools from "solid-devtools/vite";
 import UnoCSS from "unocss/vite";
 import Icons from "unplugin-icons/vite";
-import { defineConfig } from "vite";
 import solidStyled from "vite-plugin-solid-styled";
 
-export default defineConfig(() => {
-  return {
+export default defineConfig({
+  server: {
+    preset: "static"
+  },
+  vite: {
     plugins: [
-      // devtools({
-      //   autoname: true,
-      //   locator: {
-      //     targetIDE: "vscode",
-      //   },
-      // }),
-      solid({ ssr: true, adapter: vercel({}) }),
+      process.env.NODE_ENV !== "production"
+        ? devtools({
+          autoname: true,
+          locator: {
+            targetIDE: "vscode-insiders",
+          },
+        })
+        : undefined,
       Icons({ compiler: "solid" }),
       UnoCSS(),
       solidStyled({
@@ -30,5 +32,5 @@ export default defineConfig(() => {
       external: ["@prisma/client"],
       noExternal: ["@kobalte/core"],
     },
-  };
+  }
 });
