@@ -1,9 +1,9 @@
 import type { AnimationOptionsWithOverrides } from "@motionone/solid";
 import { Motion } from "@motionone/solid";
-import type { ComponentProps, JSX } from "solid-js";
-import { createSignal, For, splitProps } from "solid-js";
-import styles from "./Footer.module.scss";
 import { writeClipboard } from "@solid-primitives/clipboard";
+import type { ComponentProps, JSX } from "solid-js";
+import { For, createSignal, splitProps } from "solid-js";
+import styles from "./Footer.module.scss";
 
 import { Portal } from "solid-js/web";
 
