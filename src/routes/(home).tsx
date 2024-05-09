@@ -31,14 +31,24 @@ const Home: VoidComponent = () => {
             </Motion.span>
           </h1>
           <h2 class="overflow-y-hidden whitespace-nowrap font-montserrat text-9xl font-bold -ml-2">
-            <Motion.span
-              class="inline-block from-accent to-red-600 bg-gradient-to-r bg-clip-text pb-3 text-transparent"
-              initial={{ y: "100%", opacity: 0.7, "--gradient-position": 0 }}
-              animate={{ y: 0, opacity: 1, "--gradient-position": 1 }}
-              transition={{ duration: 1, easing: [0.19, 1, 0.22, 1], delay: 0.6 }}
-            >
-              Razboy20
-            </Motion.span>
+            <span>
+              <Motion.span
+                class="inline-block text-accent pb-3"
+                initial={{ y: "100%", opacity: 0.7, "--gradient-position": 0 }}
+                animate={{ y: 0, opacity: 1, "--gradient-position": 1 }}
+                transition={{ duration: 1, easing: [0.19, 1, 0.22, 1], delay: 0.6 }}
+              >
+                Elie
+              </Motion.span>{" "}
+              <Motion.span
+                class="inline-block from-accent to-red-600 bg-gradient-to-r bg-clip-text pb-3 text-transparent"
+                initial={{ y: "100%", opacity: 0.7, "--gradient-position": 0 }}
+                animate={{ y: 0, opacity: 1, "--gradient-position": 1 }}
+                transition={{ duration: 1, easing: [0.19, 1, 0.22, 1], delay: 0.68 }}
+              >
+                Soloveichik
+              </Motion.span>
+            </span>
             <Motion.span
               class="inline-block"
               initial={{ y: "110%" }}
@@ -70,6 +80,20 @@ const Home: VoidComponent = () => {
               transition={{ duration: 1, easing: [0.19, 1, 0.22, 1], delay: 2.2 }}
             >
               Student
+            </Motion.span>
+            <Motion.span
+              initial={{ y: -50 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 1, easing: [0.19, 1, 0.22, 1], delay: 2.35 }}
+              class="mt-1 inline-block h-1.5 w-1.5 bg-accent"
+            ></Motion.span>
+            <Motion.span
+              class="inline-block"
+              initial={{ y: "-100%" }}
+              animate={{ y: 0 }}
+              transition={{ duration: 1, easing: [0.19, 1, 0.22, 1], delay: 2.6 }}
+            >
+              Designer
             </Motion.span>
           </h3>
         </div>

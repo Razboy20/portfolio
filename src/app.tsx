@@ -5,8 +5,8 @@ import "virtual:uno.css";
 import { RouteSectionProps, Router } from "@solidjs/router";
 import { FileRoutes } from "@solidjs/start/router";
 import { Suspense } from "solid-js";
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 const Root = (prop: RouteSectionProps) => {
   return (
@@ -20,7 +20,7 @@ const Root = (prop: RouteSectionProps) => {
 
 export default function App() {
   return (
-    <Router root={Root}>
+    <Router root={Root} base="/~elies">
       <FileRoutes />
     </Router>
   );

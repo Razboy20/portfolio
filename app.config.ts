@@ -6,7 +6,8 @@ import solidStyled from "vite-plugin-solid-styled";
 
 export default defineConfig({
   server: {
-    preset: "static"
+    preset: "static",
+    baseURL: "/~elies/",
   },
   vite: {
     plugins: [

@@ -73,6 +73,18 @@ export default function Navbar() {
       >
         Projects
       </MotionA>
+      <MotionA
+        transition={{
+          duration: 0.8,
+          delay: 0.235,
+          easing: [0.19, 1, 0.22, 1],
+        }}
+        href="/research"
+        class="relative cursor-pointer transition duration-100 ease-out after:(absolute left-0.2 right-0.2 h-1 scale-x-95 bg-accent opacity-0 transition duration-250 ease-out-expo content-empty -bottom-2 sm:left-0.4 sm:right-0.4 sm:h-1.5 -translate-y-1 sm:-bottom-4) active:scale-95"
+        activeClass="text-accent after:(opacity-100 !translate-y-0 !scale-x-100)"
+      >
+        Research
+      </MotionA>
     </nav>
   );
 }
