@@ -2,7 +2,7 @@ import presetUno from "@unocss/preset-uno";
 import presetWebFonts from "@unocss/preset-web-fonts";
 import transformerDirectives from "@unocss/transformer-directives";
 import transformerVariantGroup from "@unocss/transformer-variant-group";
-import { defineConfig } from "unocss";
+import { defineConfig, type Preset } from "unocss";
 import { presetKobalte } from "unocss-preset-primitives";
 
 export default defineConfig({
@@ -37,7 +37,7 @@ export default defineConfig({
 
   presets: [
     presetUno(),
-    presetKobalte(),
+    presetKobalte() as Preset,
     presetWebFonts({
       provider: "google",
       fonts: {
