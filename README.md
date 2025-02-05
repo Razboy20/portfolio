@@ -1,4 +1,4 @@
-This project was created using [Create JD App](https://github.com/OrJDev/create-jd-app)
+# [Razboy.dev](https://razboy.dev/)
 
 ## Start Dev Server
 
@@ -23,9 +23,3 @@ pnpm start
 ```
 
 This will start a production server on port `3000`.
-
-### Enviroment Variables
-
-- `DATABASE_URL`=file:./db.sqlite  
-  
-[Sponsor Create JD App](https://github.com/sponsors/OrJDev)
